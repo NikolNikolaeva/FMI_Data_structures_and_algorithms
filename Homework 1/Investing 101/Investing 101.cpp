@@ -4,55 +4,6 @@
 
 int main()
 {
-	//unsigned N;
-	//std::cin >> N;
-	//int* arr = new int[N];
-	//for (size_t i = 0; i < N; i++)
-	//{
-	//	std::cin >> arr[i];
-	//}
-	//
-	//int income = 0;
-	//bool buy = true;
-	//int index = 0;
-	//for (size_t i = 0; i < N - 1; i = index)
-	//{
-	//	if (buy)
-	//	{
-	//		int min = 0;
-	//		for (size_t p = 1; p < N; p++)
-	//		{
-	//			if (arr[p] < arr[min])
-	//				min = p;
-	//		}
-	//		if (min == N - 1)
-	//			break;
-	//
-	//		i = min;
-	//		buy = false;
-	//	}
-	//
-	//	int maxIncome = 0;
-	//
-	//	if (buy == false)
-	//	{
-	//		for (size_t j = i + 1; j < N; j++)
-	//		{
-	//
-	//			if (arr[j] - arr[i] > maxIncome)
-	//			{
-	//				maxIncome = arr[j] - arr[i];
-	//				index = j;
-	//			}
-	//
-	//		}
-	//
-	//		income += maxIncome;
-	//		buy = true;
-	//	}
-	//}
-	//std::cout << income;
-
 	int N;
 	std::cin >> N;
 	std::vector<int> arr(N);
@@ -99,5 +50,6 @@ int main()
 	}
 
 	std::cout << income;
+	return 0;
 }
 
