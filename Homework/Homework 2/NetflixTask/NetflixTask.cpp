@@ -3,47 +3,6 @@
 #include <vector>
 #include <algorithm>
 
-//void conting_sort(std::string& arr)
-//{
-//	int n = arr.length();
-//	std::string arr_copy = "";
-//	for (int i = 0; i < n; ++i) {
-//		arr_copy[i] += arr[i];
-//	}
-//	int* count = new int[256];
-//	for (int i = 0; i < n; ++i) {
-//		count[arr[i]] = count[arr[i]] + 1;
-//	}
-//	for (int i = 1; i <= 255; ++i) {
-//		count[i] += count[i - 1];
-//	}
-//	for (int i = n - 1; i >= 0; i--) {
-//		arr[count[arr_copy[i]] - 1] = arr_copy[i];
-//		count[arr_copy[i]] = count[arr_copy[i]] - 1;
-//	}
-//}
-
-
-//void conting_sort(std::vector<int>& arr)
-//{
-//	int n = arr.size();
-//	std::vector<int> arr_copy;
-//	for (int i = 0; i < n; ++i) {
-//		arr_copy[i] = arr[i];
-//	}
-//	int* count = new int[256];
-//	for (int i = 0; i < n; ++i) {
-//		count[arr[i]] = count[arr[i]] + 1;
-//	}
-//	for (int i = 1; i <= 255; ++i) {
-//		count[i] += count[i - 1];
-//	}
-//	for (int i = n - 1; i >= 0; i--) {
-//		arr[count[arr_copy[i]] - 1] = arr_copy[i];
-//		count[arr_copy[i]] = count[arr_copy[i]] - 1;
-//	}
-//}
-
 int main()
 {
 	std::ios_base::sync_with_stdio(false);
@@ -85,5 +44,7 @@ int main()
 	{
 		printf("%d ", indexes[i]);
 	}
+	
+	return 0;
 }
 
