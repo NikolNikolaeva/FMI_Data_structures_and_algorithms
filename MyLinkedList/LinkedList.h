@@ -29,6 +29,9 @@ public:
 	int get(int position) const;
 	int peek_front() const;
 	int peek_back() const;
+	Node* middleNode() const;
+	Node* deleteDuplicates();
+	bool hasCycle();
 
 	~List();
 

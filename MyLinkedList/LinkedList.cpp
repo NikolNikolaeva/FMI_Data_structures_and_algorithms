@@ -238,6 +238,63 @@ int List::peek_back() const
 	return tail->value;
 }
 
+Node* List::middleNode() const
+{
+	Node* firstPtr = head;
+	Node* secondPtr = head;
+
+	while (secondPtr != nullptr && secondPtr->next != nullptr)
+	{
+		firstPtr = firstPtr->next;
+		secondPtr = secondPtr->next->next;
+	}
+
+	return firstPtr;
+}
+
+Node* List::deleteDuplicates() {
+
+	if (head == nullptr)
+		return head;
+
+	Node* curr = head->next;
+	Node* prev = head;
+
+	while (curr != nullptr)
+	{
+		if (prev->value == curr->value)
+		{
+			Node* nodeToDelete = curr;
+			prev->next = curr->next;
+			delete nodeToDelete;
+			curr = prev->next;
+		}
+		else
+		{
+			prev = curr;
+			curr = curr->next;
+		}
+
+	}
+	return head;
+}
+
+bool List::hasCycle() {
+
+	Node* firstPtr = head;
+	Node* secondPtr = head;
+
+	while (secondPtr != nullptr && secondPtr->next != nullptr)
+	{
+		firstPtr = firstPtr->next;
+		secondPtr = secondPtr->next->next;
+		if (firstPtr == secondPtr)
+			return true;
+	}
+
+	return false;
+}
+
 List::~List()
 {
 	free();

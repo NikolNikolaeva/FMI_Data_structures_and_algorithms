@@ -12,4 +12,6 @@ int main()
 	l.print();
 	l.reverse();
 	l.print();
+	Node* curr=l.middleNode();
+	return 0;
 }
