@@ -62,7 +62,7 @@ int main() {
 					if (diag.count({ i,j }))
 					{
 						int max = matrixValues[i][j - 1] > matrixValues[i - 1][j] ? matrixValues[i][j - 1] : matrixValues[i - 1][j];
-						int max2 = max > matrixValues[i - 1][j - 1] ? max : matrixValues[i - 1][j];
+						int max2 = max > matrixValues[i - 1][j - 1] ? max : matrixValues[i - 1][j - 1];
 						matrixValues[i][j] += max2;
 					}
 					else
